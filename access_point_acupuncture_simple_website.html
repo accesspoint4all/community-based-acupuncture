@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Point Acupuncture | Healing Within Reach</title>
+  <style>
+    :root{
+      --bg:#f7f5ef;
+      --card:#ffffff;
+      --text:#2d3a34;
+      --muted:#5f6d68;
+      --accent:#6f8f86;
+      --accent-dark:#516b63;
+      --line:#d9e2de;
+      --soft:#edf3f1;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      padding:0 20px;
+    }
+    header{
+      background:linear-gradient(180deg,#eef4f2 0%, #f7f5ef 100%);
+      border-bottom:1px solid var(--line);
+    }
+    .hero{
+      padding:64px 0 48px;
+      text-align:center;
+    }
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:1.4px;
+      color:var(--accent-dark);
+      font-size:13px;
+      font-weight:700;
+      margin-bottom:10px;
+    }
+    h1{
+      margin:0 0 12px;
+      font-size:44px;
+      line-height:1.1;
+    }
+    .tagline{
+      margin:0 0 18px;
+      color:var(--accent-dark);
+      font-size:21px;
+      font-weight:700;
+    }
+    .lead{
+      max-width:760px;
+      margin:0 auto 28px;
+      color:var(--muted);
+      font-size:18px;
+    }
+    .cta-row{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      border:1px solid var(--accent);
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:white;
+    }
+    .btn.secondary{
+      background:white;
+      color:var(--accent-dark);
+    }
+    .mini{
+      font-size:14px;
+      color:var(--muted);
+    }
+    section{
+      padding:36px 0;
+    }
+    h2{
+      margin:0 0 14px;
+      font-size:30px;
+    }
+    h3{
+      margin:0 0 8px;
+      font-size:20px;
+      color:var(--accent-dark);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+    .two-col{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:22px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:22px;
+      box-shadow:0 2px 10px rgba(0,0,0,.03);
+    }
+    .price{
+      font-size:30px;
+      font-weight:800;
+      color:var(--accent-dark);
+      margin:8px 0 8px;
+    }
+    ul{
+      margin:10px 0 0;
+      padding-left:18px;
+    }
+    .soft{
+      background:var(--soft);
+    }
+    .steps{
+      counter-reset:step;
+      display:grid;
+      gap:12px;
+      margin-top:10px;
+    }
+    .step{
+      position:relative;
+      background:white;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px 16px 16px 56px;
+    }
+    .step:before{
+      counter-increment:step;
+      content:counter(step);
+      position:absolute;
+      left:16px;
+      top:16px;
+      width:28px;
+      height:28px;
+      border-radius:50%;
+      background:var(--accent);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:14px;
+    }
+    .faq{
+      display:grid;
+      gap:12px;
+    }
+    .faq-item{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px 18px;
+    }
+    .faq-item strong{
+      display:block;
+      margin-bottom:6px;
+      color:var(--accent-dark);
+    }
+    footer{
+      border-top:1px solid var(--line);
+      padding:28px 0 50px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .contact{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+    @media (max-width: 840px){
+      .grid, .two-col, .contact{
+        grid-template-columns:1fr;
+      }
+      h1{font-size:36px}
+      .lead{font-size:17px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div class="eyebrow">Nonprofit Sliding-Scale Acupuncture</div>
+      <h1>Access Point Acupuncture</h1>
+      <p class="tagline">Healing Within Reach</p>
+      <p class="lead">
+        Affordable, focused acupuncture in Knoxville. Access Point Acupuncture is a nonprofit program
+        designed to make care more accessible through a calm, streamlined, sliding-scale model.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:accesspointacu@gmail.com?subject=Access%20Point%20Acupuncture%20Appointment%20Request">Request an Appointment</a>
+        <a class="btn secondary" href="#booking">How Booking Works</a>
+      </div>
+      <div class="mini">
+        Booking by email for now: <strong>accesspointacu@gmail.com</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="grid">
+        <div class="card">
+          <h3>Focused Sessions</h3>
+          <p>Shorter acupuncture visits designed for stress, pain, general wellness, and maintenance-style support.</p>
+        </div>
+        <div class="card" id="pricing">
+          <h3>Sliding Scale</h3>
+          <div class="price">$50 · $70 · $90</div>
+          <p>You choose the amount that best reflects your financial situation. Higher-tier payments help support access for others.</p>
+        </div>
+        <div class="card">
+          <h3>Location</h3>
+          <p>
+            Inside NDCARE<br>
+            138 Chamberlain Blvd<br>
+            Knoxville, TN
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="two-col">
+        <div>
+          <h2>Who this is for</h2>
+          <p>
+            Access Point Acupuncture is a good fit for people who want affordable, focused care and are comfortable
+            with a simpler, streamlined treatment model.
+          </p>
+          <div class="card">
+            <h3>A good fit for Access Point</h3>
+            <ul>
+              <li>Simple pain, stress, tension, or general wellness support</li>
+              <li>Maintenance-style acupuncture</li>
+              <li>Cost is an important consideration</li>
+              <li>You want shorter, straightforward visits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card soft">
+          <h3>When comprehensive care may be better</h3>
+          <p>
+            If you need more in-depth evaluation, personalized planning, or ongoing support for a more complex case,
+            NDCARE may be the better fit.
+          </p>
+          <p>
+            If you are unsure, just reach out. You can be guided to the best option for your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft" id="booking">
+      <div class="container" style="padding:0;">
+        <h2>How booking works</h2>
+        <div class="steps">
+          <div class="step">Email <strong>accesspointacu@gmail.com</strong> to request an appointment.</div>
+          <div class="step">Include your main concern and whether you prefer a morning or afternoon time.</div>
+          <div class="step">You will receive the next available options and booking instructions.</div>
+          <div class="step">Once scheduled, you can bring <strong>cash</strong> to your appointment.</div>
+        </div>
+        <div class="card" style="margin-top:18px;">
+          <h3>Simple payment model</h3>
+          <p>
+            To keep things simple and mission-focused, Access Point Acupuncture currently accepts <strong>cash</strong>.
+            The sliding scale is <strong>$50–$90</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <strong>How do I choose my sliding-scale amount?</strong>
+          Choose the amount that best reflects your current financial situation. Those who can pay at the higher end help support access for others.
+        </div>
+        <div class="faq-item">
+          <strong>Is this the same as NDCARE?</strong>
+          No. Access Point Acupuncture is a separate nonprofit program offering a more focused, affordable care model.
+        </div>
+        <div class="faq-item">
+          <strong>What if I need more comprehensive care?</strong>
+          If a deeper level of support is needed, you can be guided to the most appropriate care model.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="contact">
+        <div>
+          <strong>Access Point Acupuncture</strong><br>
+          Healing Within Reach
+        </div>
+        <div>
+          <strong>Email</strong><br>
+          accesspointacu@gmail.com
+        </div>
+        <div>
+          <strong>Location</strong><br>
+          138 Chamberlain Blvd<br>
+          Knoxville, TN
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
