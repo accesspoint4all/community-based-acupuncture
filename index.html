@@ -43,12 +43,12 @@
     a:hover { text-decoration: underline; }
 
     .container {
-      width: min(1100px, 92%);
+      width: min(1120px, 92%);
       margin: 0 auto;
     }
 
     header {
-      background: linear-gradient(180deg, rgba(122,143,116,0.15), rgba(122,143,116,0.03));
+      background: linear-gradient(180deg, rgba(122,143,116,0.16), rgba(122,143,116,0.03));
       border-bottom: 1px solid var(--border);
     }
 
@@ -91,16 +91,16 @@
     }
 
     .hero {
-      padding: 58px 0 64px;
+      padding: 52px 0 68px;
     }
 
     .logo-showcase {
       text-align: center;
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
 
     .logo-showcase img {
-      width: min(300px, 70vw);
+      width: min(280px, 68vw);
       height: auto;
       border-radius: 50%;
       background: #f1f1f1;
@@ -110,7 +110,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.12fr 0.88fr;
       gap: 34px;
       align-items: center;
     }
@@ -126,41 +126,73 @@
       text-transform: uppercase;
       padding: 8px 12px;
       border-radius: 999px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     h1 {
-      font-size: clamp(2rem, 4vw, 3.35rem);
-      line-height: 1.15;
-      margin: 0 0 10px;
+      font-size: clamp(2.2rem, 4.5vw, 3.75rem);
+      line-height: 1.08;
+      margin: 0 0 12px;
       color: var(--text);
     }
 
     .subhead {
-      font-size: 1.35rem;
+      font-size: 1.45rem;
       color: var(--accent-dark);
       font-style: italic;
       margin-bottom: 14px;
     }
 
     .hero p {
-      font-size: 1.08rem;
+      font-size: 1.1rem;
       color: var(--muted);
       margin: 0 0 18px;
-      max-width: 700px;
+      max-width: 720px;
     }
 
-    .schedule-note {
+    .conversion-box {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 18px 20px;
-      margin-top: 18px;
-      color: var(--text);
-      box-shadow: 0 8px 20px rgba(31, 41, 51, 0.04);
+      border-radius: 22px;
+      padding: 22px;
+      margin-top: 22px;
+      box-shadow: 0 10px 24px rgba(31, 41, 51, 0.05);
     }
 
-    .schedule-note strong { color: var(--accent-dark); }
+    .conversion-box h2 {
+      margin: 0 0 10px;
+      font-size: 1.35rem;
+      color: var(--navy);
+    }
+
+    .conversion-box p {
+      margin-bottom: 0;
+    }
+
+    .choice-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .choice {
+      border: 1px solid var(--border);
+      background: var(--highlight);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .choice strong {
+      display: block;
+      color: var(--accent-dark);
+      margin-bottom: 4px;
+    }
+
+    .choice span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
     .cta-group {
       display: flex;
@@ -204,7 +236,7 @@
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 24px;
-      padding: 28px;
+      padding: 30px;
       box-shadow: 0 12px 32px rgba(31, 41, 51, 0.06);
     }
 
@@ -227,7 +259,7 @@
     }
 
     .price {
-      font-size: 2.1rem;
+      font-size: 2.3rem;
       font-weight: 800;
       color: var(--accent-dark);
       margin: 6px 0 12px;
@@ -305,11 +337,11 @@
 
     .pricing-card {
       text-align: center;
-      padding: 32px 24px;
+      padding: 34px 26px;
     }
 
     .pricing-card .big-price {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       font-weight: 800;
       color: var(--text);
       margin-bottom: 8px;
@@ -380,7 +412,8 @@
       .hero-grid,
       .grid-2,
       .grid-3,
-      .footer-grid {
+      .footer-grid,
+      .choice-row {
         grid-template-columns: 1fr;
       }
 
@@ -392,7 +425,7 @@
       }
 
       .logo-showcase img {
-        width: min(230px, 74vw);
+        width: min(220px, 74vw);
       }
 
       .gallery img {
@@ -445,29 +478,41 @@
         <div class="hero-grid">
           <div>
             <div class="eyebrow">Community Acupuncture in Knoxville, TN</div>
-            <h1>Access Point Acupuncture</h1>
-            <div class="subhead">Healing within reach.</div>
+            <h1>Affordable Acupuncture, Made Simple.</h1>
+            <div class="subhead">A nonprofit clinic model designed to make care easier to access.</div>
             <p>
-              Access Point Acupuncture is a nonprofit acupuncture program created to make care more accessible while maintaining a calm, professional clinic experience.
+              Access Point Acupuncture offers focused community acupuncture in a calm, shared clinic setting. Reserve online for a guaranteed place, or come as a walk-in for limited lower-cost availability.
             </p>
 
-            <div class="schedule-note">
-              <strong>Monday Community Clinic: 12:00 PM – 2:30 PM</strong><br>
-              Reserve your spot for <strong>$90</strong> to guarantee your place, or come as a walk-in for limited <strong>$70</strong> availability. Walk-in visits are first come, first served and not guaranteed.
+            <div class="conversion-box">
+              <h2>Monday Community Clinic: 12:00 PM – 2:30 PM</h2>
+              <p>
+                Patients are seen on a rolling basis during the clinic window rather than at exact appointment times.
+              </p>
+              <div class="choice-row">
+                <div class="choice">
+                  <strong>$90 Reserved Spot</strong>
+                  <span>Guaranteed place in the Monday clinic. Online reservation required.</span>
+                </div>
+                <div class="choice">
+                  <strong>$70 Walk-In Rate — Cash or Check Only</strong>
+                  <span>Limited availability. First come, first served. No card payments for this rate.</span>
+                </div>
+              </div>
             </div>
 
             <div class="cta-group">
               <a class="btn btn-primary" href="https://square.link/u/kHDOrTyZ" target="_blank" rel="noopener">Reserve Your Spot ($90)</a>
-              <a class="btn btn-secondary" href="#pricing">See Pricing Options</a>
+              <a class="btn btn-secondary" href="https://forms.gle/5ZJytXX2uhgSXq928" target="_blank" rel="noopener">Complete Intake Form</a>
             </div>
 
             <p class="small">
-              Reservations are for the Monday clinic window. Patients are seen on a rolling basis rather than at exact appointment times.
+              Reservations are non-refundable because payment secures a limited appointment space.
             </p>
           </div>
 
           <aside class="hero-card" id="reserve">
-            <div class="tag">Guaranteed Reserved Spot</div>
+            <div class="tag">Best for Guaranteed Access</div>
             <h2>Reserve Online</h2>
             <div class="price">$90</div>
             <p>
@@ -509,7 +554,7 @@
           <div class="card">
             <h3>Or Walk In</h3>
             <p>
-              Prefer flexibility? A limited number of <strong>$70 walk-in visits</strong> are available during Monday clinic hours on a first come, first served basis.
+              Prefer flexibility? A limited number of <strong>$70 walk-in visits</strong> are available during Monday clinic hours on a first come, first served basis. This rate is payable by <strong>cash or check only</strong>.
             </p>
           </div>
 
@@ -567,9 +612,9 @@
 
           <div class="card pricing-card">
             <div class="big-price">$70</div>
-            <div class="label">Supported Rate<br>Walk-In Only</div>
+            <div class="label">Walk-In Rate<br>Cash or Check Only</div>
             <p>
-              Available during Monday clinic hours based on availability. Walk-ins are first come, first served and not guaranteed.
+              Available during Monday clinic hours based on availability. Walk-ins are first come, first served, not guaranteed, and payable by cash or check only.
             </p>
           </div>
         </div>
@@ -577,10 +622,11 @@
         <div class="highlight-box" style="margin-top: 26px;">
           <h3 style="margin-top: 0;">Important Notes</h3>
           <ul class="clean">
-            <li>Online reservations are available only at the <strong>$90 sustaining rate</strong>.</li>
-            <li>The <strong>$70 supported rate</strong> is walk-in only and cannot be reserved online.</li>
+            <li>Online reservations are available only at the <strong>$90 Sustaining Rate</strong>.</li>
+            <li>The <strong>$70 Walk-In Rate</strong> is available for walk-in visits only and cannot be reserved online.</li>
+            <li><strong>$70 Walk-In Rate — Cash or Check Only. No card payments are accepted for this rate.</strong></li>
             <li>Walk-in visits are limited, first come, first served, and based on availability during Monday clinic hours.</li>
-            <li>All $90 reservations are <strong>non-refundable</strong> because payment secures a limited appointment space.</li>
+            <li>All $90 reservations are <strong>non-refundable</strong>, as they secure a limited appointment space.</li>
           </ul>
         </div>
       </div>
@@ -599,7 +645,7 @@
           <div class="card">
             <h3>Simple Intake</h3>
             <p>
-              If this is your first visit, we will guide you through a brief intake before treatment.
+              If this is your first visit, please complete the intake form before your visit when possible.
             </p>
           </div>
 
@@ -620,7 +666,7 @@
 
         <div class="cta-group" style="margin-top: 30px;">
           <a class="btn btn-primary" href="https://square.link/u/kHDOrTyZ" target="_blank" rel="noopener">Reserve Your Spot ($90)</a>
-          <a class="btn btn-secondary" href="#faq">Read FAQs</a>
+          <a class="btn btn-secondary" href="https://forms.gle/5ZJytXX2uhgSXq928" target="_blank" rel="noopener">Complete Intake Form</a>
         </div>
       </div>
     </section>
@@ -641,7 +687,14 @@
         <details>
           <summary>Can I reserve the $70 rate online?</summary>
           <p>
-            No. The $70 supported rate is available only for walk-in visits during Monday clinic hours and depends on availability.
+            No. The $70 Walk-In Rate is available only for walk-in visits during Monday clinic hours and depends on availability.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I pay the $70 rate with a card?</summary>
+          <p>
+            No. The $70 Walk-In Rate is payable by cash or check only. Card payments are not accepted for the $70 rate.
           </p>
         </details>
 
@@ -662,7 +715,7 @@
         <details>
           <summary>What forms of payment are accepted?</summary>
           <p>
-            Online reservations are paid through the reservation link. For walk-ins, we accept cash and check during the clinic.
+            Online reservations are paid through the reservation link. For $70 walk-in visits, we accept cash and check only during the clinic.
           </p>
         </details>
       </div>
@@ -674,12 +727,13 @@
           <div class="section-head" style="margin-bottom: 12px;">
             <h2 style="margin-bottom: 8px;">Ready to Visit?</h2>
             <p>
-              Reserve online for a guaranteed $90 place in the upcoming Monday clinic, or come as a $70 walk-in based on availability.
+              Reserve online for a guaranteed $90 place in the upcoming Monday clinic, or come as a $70 walk-in with cash or check based on availability.
             </p>
           </div>
 
           <div class="cta-group">
             <a class="btn btn-primary" href="https://square.link/u/kHDOrTyZ" target="_blank" rel="noopener">Reserve Your Spot ($90)</a>
+            <a class="btn btn-secondary" href="https://forms.gle/5ZJytXX2uhgSXq928" target="_blank" rel="noopener">Complete Intake Form</a>
             <a class="btn btn-secondary" href="https://www.nd-care.com" target="_blank" rel="noopener">Visit NDCARE</a>
           </div>
         </div>
